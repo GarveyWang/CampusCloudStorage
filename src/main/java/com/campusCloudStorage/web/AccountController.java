@@ -32,7 +32,7 @@ public class AccountController {
     public String login(User user, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap) {
         LoginStateEnum loginState=userService.validate(user);
         if(loginState!=LoginStateEnum.SUCCESS){
-            return "home";
+            return "login";
         }
 
         int uId=user.getuId();

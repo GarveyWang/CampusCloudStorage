@@ -2,7 +2,6 @@ package com.campusCloudStorage.web;
 
 
 import com.campusCloudStorage.dto.FriendFileShareItem;
-import com.campusCloudStorage.entity.Dir;
 import com.campusCloudStorage.entity.FileHeader;
 import com.campusCloudStorage.enums.ShareStateEnum;
 import com.campusCloudStorage.service.FileHeaderService;
@@ -62,7 +61,7 @@ public class FileController {
 
     @RequestMapping(value="/{fId}/download",method = RequestMethod.POST)
     public void fileDownload(@PathVariable("fId") int fId, HttpServletResponse response) throws Exception{
-        FileHeader fileHeader=fileHeaderService.selectByPrimaryKey(fId);
+        FileHeader fileHeader=fileHeaderService.getFileHeaderById(fId);
         String path = fileHeader.getPath();
         InputStream bis = new BufferedInputStream(new FileInputStream(new File(path)));
 
@@ -86,9 +85,9 @@ public class FileController {
         HttpSession session=request.getSession();
         int recyclebin=(int)session.getAttribute("recyclebin");
 
-        FileHeader fileHeader= fileHeaderService.selectByPrimaryKey(fId);
+        FileHeader fileHeader= fileHeaderService.getFileHeaderById(fId);
         fileHeader.setParent(recyclebin);
-        fileHeaderService.update(fileHeader);
+        fileHeaderService.updateFileHeader(fileHeader);
 
         int currentDir = (int)session.getAttribute("currentDir");
         return "forward:/home/"+currentDir;
@@ -98,7 +97,7 @@ public class FileController {
     public String fileDelete(@PathVariable("fId") int fId, HttpServletRequest request){
         HttpSession session=request.getSession();
         int currentDir = (int)session.getAttribute("currentDir");
-        fileHeaderService.deleteByPrimaryKey(fId);
+        fileHeaderService.deleteFileHeader(fId);
         return "forward:/recyclebin/"+currentDir;
     }
 
@@ -123,7 +122,7 @@ public class FileController {
 
     @RequestMapping(value="/{uId}/{friendId}/{fId}/friendshare",method = RequestMethod.POST)
     public String addFriendShareFile(@PathVariable("uId") int uId, @PathVariable("friendId") int friendId,@PathVariable("fId") int fId, String remark, HttpServletRequest request, Model model){
-        ShareStateEnum shareState=userFileShareService.insertByPrimaryKey(uId,friendId,fId,remark);
+        ShareStateEnum shareState=userFileShareService.shareFileWithFriend(uId,friendId,fId,remark);
 
         model.addAttribute("msg",shareState.getStateInfo());
         HttpSession session=request.getSession();

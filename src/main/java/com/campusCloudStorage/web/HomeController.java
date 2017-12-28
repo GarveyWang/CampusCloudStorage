@@ -2,8 +2,6 @@ package com.campusCloudStorage.web;
 
 import com.campusCloudStorage.entity.*;
 import com.campusCloudStorage.enums.CreateStateEnum;
-import com.campusCloudStorage.enums.DeleteStateEnum;
-import com.campusCloudStorage.enums.LoginStateEnum;
 import com.campusCloudStorage.enums.UpdateStateEnum;
 import com.campusCloudStorage.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +11,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
@@ -47,18 +43,20 @@ public class HomeController {
         int rootDir=(int)session.getAttribute("rootDir");
         int recyclebin=(int)session.getAttribute("recyclebin");
 
-        Dir dir=dirService.selectByPrimaryKey(dId);
-        List<Dir> dirList=dirService.getFirstChildrenDirList(dId);
-        List<FileHeader> fileHeaderList=dirService.getFirstChildrenFileHeaderList(dId);
+        User user=userService.selectByPrimaryKey(uId);
+
+        Dir dir=dirService.getDirById(dId);
+        List<Dir> dirList=dirService.getFirstChildrenDirs(dId);
+        List<FileHeader> fileHeaderList=dirService.getFirstChildrenFileHeaders(dId);
         List<Dir> pathList=dirService.getPathList(dir);
 
-        List<Dir> moveList=dirService.getFirstChildrenDirList(rootDir);
+        List<Dir> moveList=dirService.getFirstChildrenDirs(rootDir);
 
         List<User> friendList=userFriendService.selectPermittedFriendsByUId(uId);
         List<UserGroup> groupList=userGroupService.selectOwnedAndJoinedGroups(uId);
 
         model.addAttribute("uId",uId);
-
+        model.addAttribute("userName",user.getName());
         model.addAttribute("currentDir",dId);
         model.addAttribute("rootDir",rootDir);
         model.addAttribute("recyclebin",recyclebin);
@@ -88,9 +86,9 @@ public class HomeController {
         HttpSession session=request.getSession();
         int recyclebin=(int)session.getAttribute("recyclebin");
 
-        Dir dir = dirService.selectByPrimaryKey(dId);
+        Dir dir = dirService.getDirById(dId);
         dir.setParent(recyclebin);
-        dirService.update(dir);
+        dirService.updateDir(dir);
 
         int currentDir = (int)session.getAttribute("currentDir");
         return "forward:/home/"+currentDir;
@@ -98,9 +96,9 @@ public class HomeController {
 
     @RequestMapping(value="/{dId}/dir/rename",method= RequestMethod.POST)
     public String renameDir(@PathVariable("dId")int dId, String name, HttpServletRequest request, RedirectAttributesModelMap modelMap) {
-        Dir dir=dirService.selectByPrimaryKey(dId);
+        Dir dir=dirService.getDirById(dId);
         dir.setName(name);
-        UpdateStateEnum updateState = dirService.update(dir);
+        UpdateStateEnum updateState = dirService.updateDir(dir);
 
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
 
@@ -112,9 +110,9 @@ public class HomeController {
     @RequestMapping(value="/{dId}/dir/{newParentId}/move",method= RequestMethod.POST)
     public String moveDir(@PathVariable("dId")int dId, @PathVariable("newParentId")int newParentId,
                             HttpServletRequest request, RedirectAttributesModelMap modelMap) {
-        Dir dir=dirService.selectByPrimaryKey(dId);
+        Dir dir=dirService.getDirById(dId);
         dir.setParent(newParentId);
-        UpdateStateEnum updateState = dirService.update(dir);
+        UpdateStateEnum updateState = dirService.updateDir(dir);
 
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
 
@@ -126,9 +124,9 @@ public class HomeController {
     @RequestMapping(value="/{fId}/file/{newParentId}/move",method= RequestMethod.POST)
     public String moveFile(@PathVariable("fId")int fId, @PathVariable("newParentId")int newParentId,
                           HttpServletRequest request, RedirectAttributesModelMap modelMap) {
-        FileHeader fileHeader= fileHeaderService.selectByPrimaryKey(fId);
+        FileHeader fileHeader= fileHeaderService.getFileHeaderById(fId);
         fileHeader.setParent(newParentId);
-        UpdateStateEnum updateState = fileHeaderService.update(fileHeader);
+        UpdateStateEnum updateState = fileHeaderService.updateFileHeader(fileHeader);
 
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
 
@@ -140,7 +138,7 @@ public class HomeController {
     @RequestMapping(value="{srcId}/dir/{dId}/enter",method= RequestMethod.POST,produces = "text/html;charset=UTF-8")
     @ResponseBody
     public String enterDir(@PathVariable("srcId") int srcId, @PathVariable("dId")int dId, String moveType) {
-        Dir dir=dirService.selectWithFirstChildrenById(dId);
+        Dir dir=dirService.getDirWithFirstChildrenById(dId);
 
         StringBuilder responseText=new StringBuilder();
         if(moveType.equals("dir")){

@@ -18,16 +18,14 @@
     from user
     where u_id = #{uId,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from user
-    where u_id = #{uId,jdbcType=INTEGER}
-  </delete>
+
   <insert id="insert" parameterType="com.campusCloudStorage.entity.User">
     insert into user (u_id, password, name, 
       root_dir, type)
     values (#{uId,jdbcType=INTEGER}, #{password,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
       #{rootDir,jdbcType=INTEGER},#{recyclebin,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR})
   </insert>
+
   <insert id="insertSelective" parameterType="com.campusCloudStorage.entity.User">
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -71,6 +69,7 @@
       </if>
     </trim>
   </insert>
+
   <update id="updateByPrimaryKeySelective" parameterType="com.campusCloudStorage.entity.User">
     update user
     <set>
@@ -92,6 +91,7 @@
     </set>
     where u_id = #{uId,jdbcType=INTEGER}
   </update>
+
   <update id="updateByPrimaryKey" parameterType="com.campusCloudStorage.entity.User">
     update user
     set password = #{password,jdbcType=VARCHAR},
@@ -101,4 +101,9 @@
       type = #{type,jdbcType=VARCHAR}
     where u_id = #{uId,jdbcType=INTEGER}
   </update>
+
+  <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">-->
+    <!--delete from user-->
+    <!--where u_id = #{uId,jdbcType=INTEGER}-->
+  <!--</delete>-->
 </mapper>

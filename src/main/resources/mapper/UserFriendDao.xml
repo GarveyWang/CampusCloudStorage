@@ -20,14 +20,14 @@
     select
     <include refid="Base_Column_List" />
     from user_friend
-    where from_id = #{uId,jdbcType=INTEGER}
+    where from_id = #{fromId,jdbcType=INTEGER}
       and permitted = 0
   </select>
   <select id="selectFriendRequests" parameterType="integer" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
     from user_friend
-    where to_id = #{uId,jdbcType=INTEGER}
+    where to_id = #{toId,jdbcType=INTEGER}
     and permitted = 0
   </select>
   <select id="selectFriends" parameterType="integer" resultMap="BaseResultMap">

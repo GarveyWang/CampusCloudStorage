@@ -7,52 +7,192 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3093b5b8-5984-48d4-8d0b-26b1d5bd4d82" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/RecyclebinController.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/cloudStorage.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/1/1843546578啊啊.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/1/1866500402啊啊.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/1/2133350742啊啊.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dao/DirDao.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dao/DirDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dao/FileHeaderDao.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dao/FileHeaderDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dao/GroupFileShareDao.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dao/GroupFileShareDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dao/GroupMemberDao.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dao/GroupMemberDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dao/UserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dto/FriendFileShareItem.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dto/FriendFileShareItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dto/GroupFileShareItem.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/dto/GroupFileShareItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/Dir.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/Dir.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/FileHeader.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/FileHeader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/GroupFileShare.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/GroupFileShare.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/GroupFileShareKey.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/GroupFileShareKey.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/GroupMember.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/GroupMember.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/GroupMemberKey.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/GroupMemberKey.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/User.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/UserFileShare.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/UserFileShare.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/UserFileShareKey.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/UserFileShareKey.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/UserFriend.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/UserFriend.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/UserFriendKey.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/UserFriendKey.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/UserGroup.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/entity/UserGroup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/CreateStateEnum.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/CreateStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/DeleteStateEnum.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/DeleteStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/FriendRequestStateEnum.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/FriendRequestStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/GroupRequestStateEnum.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/GroupRequestStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/LoginStateEnum.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/LoginStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/RegisterStateEnum.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/RegisterStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/ShareStateEnum.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/ShareStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/UpdateStateEnum.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/UpdateStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/UploadFileStateEnum.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/enums/UploadFileStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/DirService.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/DirService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/FileHeaderService.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/FileHeaderService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/GroupFileShareService.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/GroupFileShareService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/GroupMemberService.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/GroupMemberService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/UserFileShareService.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/UserFileShareService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/UserFriendService.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/UserFriendService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/DirServiceImpl.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/DirServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/FileHeaderServiceImpl.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/FileHeaderServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/GroupFileShareServiceImpl.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/GroupFileShareServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/GroupMemberServiceImpl.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/GroupMemberServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/UserFileShareServiceImpl.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/UserFileShareServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/UserFriendServiceImpl.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/service/impl/UserFriendServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/AccountController.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/AccountController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/FileController.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/FileController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/FriendController.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/FriendController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/GroupController.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/GroupController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/HomeController.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/HomeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/RecyclebinController.class" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/com/campusCloudStorage/web/RecyclebinController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dao/DirDao.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dao/DirDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dao/FileHeaderDao.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dao/FileHeaderDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dao/GroupFileShareDao.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dao/GroupFileShareDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dao/GroupMemberDao.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dao/GroupMemberDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dao/UserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dto/FriendFileShareItem.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dto/FriendFileShareItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dto/GroupFileShareItem.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/dto/GroupFileShareItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/Dir.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/Dir.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/FileHeader.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/FileHeader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/GroupFileShare.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/GroupFileShare.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/GroupFileShareKey.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/GroupFileShareKey.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/GroupMember.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/GroupMember.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/GroupMemberKey.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/GroupMemberKey.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/User.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/UserFileShare.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/UserFileShare.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/UserFileShareKey.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/UserFileShareKey.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/UserFriend.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/UserFriend.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/UserFriendKey.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/UserFriendKey.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/UserGroup.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/entity/UserGroup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/CreateStateEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/CreateStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/DeleteStateEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/DeleteStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/FriendRequestStateEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/FriendRequestStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/GroupRequestStateEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/GroupRequestStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/LoginStateEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/LoginStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/RegisterStateEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/RegisterStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/ShareStateEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/ShareStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/UpdateStateEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/UpdateStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/UploadFileStateEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/enums/UploadFileStateEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/DirService.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/DirService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/FileHeaderService.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/FileHeaderService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/GroupFileShareService.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/GroupFileShareService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/GroupMemberService.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/GroupMemberService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/UserFileShareService.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/UserFileShareService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/UserFriendService.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/UserFriendService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/DirServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/DirServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/FileHeaderServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/FileHeaderServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/GroupFileShareServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/GroupFileShareServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/GroupMemberServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/GroupMemberServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/UserFileShareServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/UserFileShareServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/UserFriendServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/service/impl/UserFriendServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/AccountController.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/AccountController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/FileController.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/FileController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/FriendController.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/FriendController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/GroupController.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/GroupController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/HomeController.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/HomeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/RecyclebinController.class" afterPath="$PROJECT_DIR$/target/classes/com/campusCloudStorage/web/RecyclebinController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/campusCloudStorage/dao/FileHeaderDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/campusCloudStorage/dao/FileHeaderDaoTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/campusCloudStorage/service/impl/DirServiceImplTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/campusCloudStorage/service/impl/DirServiceImplTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/DirDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/DirDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/FileHeaderDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/FileHeaderDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/GroupFileShareDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/GroupFileShareDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/GroupMemberDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/GroupMemberDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserFileShareDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserFileShareDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserFriendDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserFriendDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserGroupDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserGroupDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/FriendFileShareItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/FriendFileShareItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/GroupFileShareItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/GroupFileShareItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/Dir.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/Dir.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/FileHeader.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/FileHeader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupFileShare.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupFileShare.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupFileShareKey.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupFileShareKey.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupMember.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupMember.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupMemberKey.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupMemberKey.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFileShare.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFileShare.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFileShareKey.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFileShareKey.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFriend.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFriend.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFriendKey.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFriendKey.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserGroup.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/CreateStateEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/CreateStateEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/DeleteStateEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/DeleteStateEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/FriendRequestStateEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/FriendRequestStateEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/GroupRequestStateEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/GroupRequestStateEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/LoginStateEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/LoginStateEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/RegisterStateEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/RegisterStateEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/ShareStateEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/ShareStateEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/UpdateStateEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/UpdateStateEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/UploadFileStateEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/UploadFileStateEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/DirService.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/DirService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/FileHeaderService.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/FileHeaderService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupFileShareService.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupFileShareService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupMemberService.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupMemberService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserFileShareService.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserFileShareService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserFriendService.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserFriendService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserGroupService.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserGroupService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/DirServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/DirServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/FileHeaderServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/FileHeaderServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/GroupFileShareServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/GroupFileShareServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/GroupMemberServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/GroupMemberServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFileShareServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFileShareServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFriendServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFriendServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/AccountController.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/AccountController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/FileController.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/FileController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/FriendController.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/FriendController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/GroupController.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/GroupController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/HomeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/RecyclebinController.java" afterPath="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/RecyclebinController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/DirDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DirDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/FileHeaderDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FileHeaderDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/GroupFileShareDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GroupFileShareDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/GroupMemberDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GroupMemberDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/friend.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/friend.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/friendshare.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/friendshare.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/group.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/group.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/groupdetail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/groupdetail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserFriendDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserFriendDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navbar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navbar.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recyclebin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recyclebin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/fileinput.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/fileinput.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/campusCloudStorage/dao/FileHeaderDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/campusCloudStorage/dao/FileHeaderDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/campusCloudStorage/service/impl/DirServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/campusCloudStorage/service/impl/DirServiceImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/DirDao.xml" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/DirDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/FileHeaderDao.xml" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/FileHeaderDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/GroupFileShareDao.xml" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/GroupFileShareDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/GroupMemberDao.xml" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/GroupMemberDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/UserDao.xml" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/UserDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/friend.jsp" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/friend.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/friendshare.jsp" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/friendshare.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/group.jsp" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/group.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/groupdetail.jsp" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/groupdetail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/UserFriendDao.xml" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/mapper/UserFriendDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/spring/spring-web.xml" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/classes/spring/spring-web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/common/navbar.jsp" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/common/navbar.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/home.jsp" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/recyclebin.jsp" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/jsp/recyclebin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/login.jsp" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CampusCloudStorage/resources/js/fileinput.min.js" afterPath="$PROJECT_DIR$/target/CampusCloudStorage/resources/js/fileinput.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/DirDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/DirDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/FileHeaderDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/FileHeaderDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/GroupFileShareDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/GroupFileShareDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/GroupMemberDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/GroupMemberDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/UserFriendDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/UserFriendDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" afterPath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,63 +203,87 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RecyclebinController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/RecyclebinController.java">
+      <file leaf-file-name="DirService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/DirService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/HomeController.java">
+      <file leaf-file-name="FileHeaderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/FileHeaderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1036">
-              <caret line="47" column="63" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="47" selection-end-column="63" />
+            <state relative-caret-position="1020">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FriendController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/FriendController.java">
+      <file leaf-file-name="GroupFileShareService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupFileShareService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1036">
-              <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+            <state relative-caret-position="930">
+              <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/GroupController.java">
+      <file leaf-file-name="GroupMemberService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupMemberService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+            <state relative-caret-position="600">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/FileController.java">
+      <file leaf-file-name="DirServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/DirServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3478">
-              <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="8" selection-end-line="115" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="2400">
+              <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <folding>
+                <element signature="e#2097#2131#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserService.java">
+      <file leaf-file-name="UserGroupServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserGroupServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="150">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#1462#1473#0" expanded="true" />
+                <element signature="e#2178#2184#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserFriendServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFriendServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2070">
+              <caret line="80" column="5" lean-forward="false" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -128,8 +292,35 @@
       <file leaf-file-name="FileHeaderDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/FileHeaderDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="510">
+              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileHeaderDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FileHeaderDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+              <folding>
+                <marker date="1514391049372" expanded="true" signature="960:1070" ph="select from file_header" />
+                <marker date="1514391049372" expanded="true" signature="1181:1297" ph="select from file_header" />
+                <marker date="1514391049372" expanded="true" signature="1384:1448" ph="delete from " />
+                <marker date="1514391049372" expanded="true" signature="1533:1604" ph="delete from " />
+                <marker date="1514391049372" expanded="true" signature="1744:2016" ph="insert into file_header... " />
+                <marker date="1514391049372" expanded="true" signature="2126:2438" ph="update file_... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2670">
+              <caret line="104" column="38" lean-forward="false" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -150,6 +341,19 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>MoveLis</find>
+      <find>dir_move_form_close_btn</find>
+      <find>close_btn</find>
+      <find>Dele</find>
+      <find>delete</find>
+      <find>inp</find>
+      <find>restaurant</find>
+      <find>allowedPreviewTypes</find>
+      <find>allow</find>
+      <find>update</find>
+      <find>updateByPrimaryKey</find>
+      <find>insert</find>
+      <find>selectPermittedByUId</find>
+      <find>updateByPrimaryKeySelective</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,57 +367,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFriendKey.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFriend.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserFriendDao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/campusCloudStorage/service/impl/UserFriendServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/FriendRequestStateEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserFriendService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserFriendDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFriendServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFileShareKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/GroupMemberDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/AccountController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserFileShareDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserFriendDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserFriendDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserGroupDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/GroupFileShareItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/FriendFileShareItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/Dir.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/FileHeader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFriend.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFriendKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupFileShareKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupFileShare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupMember.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupMemberKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFileShare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFileShareKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/CreateStateEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/DeleteStateEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/LoginStateEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/RegisterStateEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/ShareStateEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserFileShareDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/FileShareItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/UpdateStateEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/UploadFileStateEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/GroupRequestStateEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/GroupMemberServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserFileShareService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFileShareServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserGroupDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserGroupDao.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/campusCloudStorage/service/impl/UserGroupServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/campusCloudStorage/dao/UserFriendDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/GroupRequestStateEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/FriendFileShareItem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/GroupFileShareItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/FriendRequestStateEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFriendServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserFriendService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserGroupService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupMemberService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/GroupMemberServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupFileShareService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/GroupFileShareServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/GroupMemberDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/GroupMemberDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserGroupServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/GroupFileShareDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/GroupFileShareDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/FileHeaderService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/FileHeaderDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/FileHeaderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/DirServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/groupdetail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/group.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/friendshare.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/friend.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/AccountController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recyclebin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/campusCloudStorage/service/impl/DirServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/campusCloudStorage/dao/FileHeaderDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/RecyclebinController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/FriendController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/FileController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/GroupController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/DirService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/FileHeaderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupFileShareService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupMemberService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/FileHeaderDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/FileHeaderDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/DirServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -237,11 +441,17 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="180" />
-    <option name="y" value="250" />
-    <option name="width" value="1549" />
-    <option name="height" value="606" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -280,10 +490,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -307,6 +516,103 @@
               <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="campusCloudStorage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="campusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="campusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="campusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="campusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -315,6 +621,44 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
@@ -355,15 +699,11 @@
               <item name="campusCloudStorage" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CampusCloudStorage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CampusCloudStorage" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,20 +714,13 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Restaurant" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.campusCloudStorage.service.impl" />
       <recent name="com.campusCloudStorage.dao" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\code\CampusCloudStorage\src\main\webapp\WEB-INF\jsp" />
-      <recent name="G:\code\CampusCloudStorage\src\main\webapp" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.campusCloudStorage.web" />
@@ -402,6 +735,13 @@
       <recent name="G:\code\CampusCloudStorage\src\main\java\com\campusCloudStorage\dao" />
       <recent name="G:\code\CampusCloudStorage\src\main\resources\mapper" />
       <recent name="G:\code\CampusCloudStorage\src\main\java\com\campusCloudStorage\entity" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\code\CampusCloudStorage\src\main\webapp\WEB-INF\jsp" />
+      <recent name="G:\code\CampusCloudStorage\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -443,7 +783,9 @@
       <patterns />
     </configuration>
     <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M26" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="CampusCloudStorage:war exploded">
           <settings>
@@ -635,6 +977,69 @@
       <module name="" />
       <envs />
     </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -695,6 +1100,195 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CampusCloudStorage" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.DirServiceImplTest.selectWithAllChildrenById" />
@@ -741,6 +1335,11 @@
       <workItem from="1513901365502" duration="31545000" />
       <workItem from="1513953964808" duration="10450000" />
       <workItem from="1513964504512" duration="305000" />
+      <workItem from="1514275583876" duration="2741000" />
+      <workItem from="1514333464330" duration="4433000" />
+      <workItem from="1514338075571" duration="6995000" />
+      <workItem from="1514370544743" duration="15220000" />
+      <workItem from="1514421230455" duration="1274000" />
     </task>
     <servers />
   </component>
@@ -777,15 +1376,16 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168142000" />
+    <option name="totallyTimeSpent" value="205349000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -794,17 +1394,18 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.088865094" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24461207" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.028907923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.026766594" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33892968" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24517168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26172706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -813,9 +1414,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4181439" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49892932" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -867,7 +1467,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="71" />
+      <option name="time" value="74" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -875,477 +1475,419 @@
       </configuration>
     </watches-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/ShareStateEnum.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/AccountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="263">
+          <caret line="58" column="60" lean-forward="true" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserFileShareDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserFriendDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <marker date="1514344386935" expanded="true" signature="699:858" ph="select from user_friend" />
+            <marker date="1514344386935" expanded="true" signature="966:1105" ph="select from user_friend" />
+            <marker date="1514344386935" expanded="true" signature="1209:1342" ph="select from user_friend" />
+            <marker date="1514344386935" expanded="true" signature="1439:1616" ph="select from user_friend" />
+            <marker date="1514344386935" expanded="true" signature="1728:1841" ph="delete from " />
+            <marker date="1514344386935" expanded="true" signature="2925:3153" ph="update user_... " />
+            <marker date="1514344386935" expanded="true" signature="3262:3420" ph="update user_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserFriendDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserGroupDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1961">
+          <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/GroupFileShareItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/FriendFileShareItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/Dir.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/FileHeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFriendKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserGroup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        <state relative-caret-position="444">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupFileShareKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupFileShare.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
-          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserGroupDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupMember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        <state relative-caret-position="111">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserGroupDao.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/GroupMemberKey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-          <folding>
-            <marker date="1513904999695" expanded="true" signature="736:845" ph="select from user_group" />
-            <marker date="1513904999695" expanded="true" signature="956:1076" ph="select from user_group" />
-            <marker date="1513904999695" expanded="true" signature="1162:1225" ph="delete from " />
-            <marker date="1513904999695" expanded="true" signature="1321:1508" ph="insert into user_group... " />
-            <marker date="1513904999695" expanded="true" signature="2443:2790" ph="update user_... " />
-            <marker date="1513904999695" expanded="true" signature="2898:3085" ph="update user_... " />
-          </folding>
+        <state relative-caret-position="111">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/campusCloudStorage/service/impl/UserFriendServiceImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFileShare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFileShareKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/UploadFileStateEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/UpdateStateEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/ShareStateEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/RegisterStateEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/LoginStateEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/CreateStateEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="47" />
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/campusCloudStorage/service/impl/UserGroupServiceImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/DeleteStateEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        <state relative-caret-position="296">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserFriendDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/UserFriend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFriendServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="74" column="31" lean-forward="true" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/campusCloudStorage/dao/UserFriendDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/GroupRequestStateEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/FriendFileShareItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dto/GroupFileShareItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserFileShareDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding>
-            <marker date="1513838147241" expanded="true" signature="764:969" ph="select from user_file_share" />
-            <marker date="1513838147241" expanded="true" signature="1040:1158" ph="select from user_file_share" />
-            <marker date="1513838147241" expanded="true" signature="1273:1432" ph="delete from " />
-            <marker date="1513838147241" expanded="true" signature="1501:1569" ph="delete from " />
-            <marker date="1513838147241" expanded="true" signature="1669:1867" ph="insert into user_file_share... " />
-            <marker date="1513838147241" expanded="true" signature="2812:3073" ph="update user_... " />
-            <marker date="1513838147241" expanded="true" signature="3185:3383" ph="update user_... " />
-          </folding>
+        <state relative-caret-position="481">
+          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/GroupMemberServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-497">
-          <caret line="85" column="69" lean-forward="true" selection-start-line="85" selection-start-column="69" selection-end-line="85" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1492#1498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupMemberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserGroupService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/GroupFileShareDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/GroupFileShareDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding>
-            <marker date="1513946570808" expanded="true" signature="776:987" ph="select from group_file_share" />
-            <marker date="1513946570808" expanded="true" signature="1082:1196" ph="select from group_file_share" />
-            <marker date="1513946570808" expanded="true" signature="1312:1477" ph="delete from " />
-            <marker date="1513946570808" expanded="true" signature="1546:1615" ph="delete from " />
-            <marker date="1513946570808" expanded="true" signature="1673:1750" ph="delete from " />
-            <marker date="1513946570808" expanded="true" signature="1801:1871" ph="delete from " />
-            <marker date="1513946570808" expanded="true" signature="1972:2176" ph="insert into group_file_share... " />
-            <marker date="1513946570808" expanded="true" signature="3136:3407" ph="update group... " />
-            <marker date="1513946570808" expanded="true" signature="3520:3724" ph="update group... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/GroupMemberDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
-          <folding>
-            <marker date="1513946570730" expanded="true" signature="690:842" ph="select from group_member" />
-            <marker date="1513946570730" expanded="true" signature="944:1054" ph="select from group_member" />
-            <marker date="1513946570730" expanded="true" signature="944:1078" ph="select from group_member" />
-            <marker date="1513946570730" expanded="true" signature="1182:1316" ph="select from group_member" />
-            <marker date="1513946570730" expanded="true" signature="1424:1556" ph="select from group_member" />
-            <marker date="1513946570730" expanded="true" signature="1669:1775" ph="delete from " />
-            <marker date="1513946570730" expanded="true" signature="1844:1909" ph="delete from " />
-            <marker date="1513946570730" expanded="true" signature="2007:2162" ph="insert into group_member... " />
-            <marker date="1513946570730" expanded="true" signature="2965:3186" ph="update group... " />
-            <marker date="1513946570730" expanded="true" signature="3296:3447" ph="update group... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/GroupFileShareServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserGroupServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2775">
-          <caret line="93" column="47" lean-forward="false" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/GroupMemberDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFileShareServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserFileShareService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupFileShareService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FileHeaderDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="117" column="29" lean-forward="false" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
-          <folding>
-            <marker date="1513671736957" expanded="true" signature="959:1069" ph="select from file_header" />
-            <marker date="1513671736957" expanded="true" signature="1180:1296" ph="select from file_header" />
-            <marker date="1513671736957" expanded="true" signature="1383:1447" ph="delete from " />
-            <marker date="1513671736957" expanded="true" signature="1586:1858" ph="insert into file_header... " />
-            <marker date="1513671736957" expanded="true" signature="3209:3818" ph="update file_... " />
-            <marker date="1513671736957" expanded="true" signature="3927:4239" ph="update file_... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/FileHeaderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/DirService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/DirServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/FileHeaderDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1147">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3244">
-          <caret line="99" column="31" lean-forward="false" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
-          <folding>
-            <marker date="1513959234014" expanded="true" signature="890:993" ph="select from user" />
-            <marker date="1513959234014" expanded="true" signature="1079:1136" ph="delete from " />
-            <marker date="1513959234014" expanded="true" signature="1227:1475" ph="insert into user... " />
-            <marker date="1513959234014" expanded="true" signature="2694:3227" ph="update user " />
-            <marker date="1513959234014" expanded="true" signature="3330:3605" ph="update user " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/FileHeaderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2405">
-          <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
-          <folding>
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recyclebin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="18" column="65" lean-forward="true" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/RecyclebinController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="47" column="63" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="47" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/FriendController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/FileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3478">
-          <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="8" selection-end-line="115" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/groupdetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/group.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#6783#7308#0#HTML" expanded="false" />
-            <element signature="e#7374#7854#0#HTML" expanded="false" />
-            <element signature="e#7930#8011#0#HTML" expanded="false" />
-            <element signature="e#8072#8176#0#HTML" expanded="false" />
-            <element signature="e#8242#8769#0#HTML" expanded="false" />
-            <element signature="e#8829#9340#0#HTML" expanded="false" />
-            <element signature="e#9388#9899#0#HTML" expanded="false" />
-            <element signature="e#9973#10237#0#HTML" expanded="false" />
-            <element signature="e#10298#10402#0#HTML" expanded="false" />
-            <element signature="e#11277#11805#0#HTML" expanded="false" />
-            <element signature="e#11884#11984#0#HTML" expanded="false" />
-            <element signature="e#12967#13694#0#HTML" expanded="false" />
-            <element signature="e#13769#14298#0#HTML" expanded="false" />
-            <element signature="e#14378#14480#0#HTML" expanded="false" />
-            <element signature="e#15152#15390#0#HTML" expanded="false" />
-            <element signature="e#15467#15621#0#HTML" expanded="false" />
-            <element signature="e#15684#15792#0#HTML" expanded="false" />
-            <element signature="e#15844#16301#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/friend.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/friendshare.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="12" column="65" lean-forward="true" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/CloudStorage.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7881">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/GroupController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+        <state relative-caret-position="-3703">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFileShareServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1438">
+          <caret line="67" column="41" lean-forward="false" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserFileShareService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/enums/FriendRequestStateEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserFriendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserGroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2257">
+          <caret line="66" column="19" lean-forward="false" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/DirDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/campusCloudStorage/service/impl/DirServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="63" column="60" lean-forward="false" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/RecyclebinController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1591">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/campusCloudStorage/dao/FileHeaderDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/web/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2670">
+          <caret line="104" column="38" lean-forward="false" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3478">
+          <caret line="100" column="10" lean-forward="true" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/DirService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupMemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/dao/FileHeaderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FileHeaderDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding>
+            <marker date="1514391049372" expanded="true" signature="960:1070" ph="select from file_header" />
+            <marker date="1514391049372" expanded="true" signature="1181:1297" ph="select from file_header" />
+            <marker date="1514391049372" expanded="true" signature="1384:1448" ph="delete from " />
+            <marker date="1514391049372" expanded="true" signature="1533:1604" ph="delete from " />
+            <marker date="1514391049372" expanded="true" signature="1744:2016" ph="insert into file_header... " />
+            <marker date="1514391049372" expanded="true" signature="2126:2438" ph="update file_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/GroupFileShareService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/FileHeaderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/DirServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="e#2097#2131#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserGroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#1462#1473#0" expanded="true" />
+            <element signature="e#2178#2184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/campusCloudStorage/service/impl/UserFriendServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="80" column="5" lean-forward="false" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
           <folding />
         </state>
       </provider>

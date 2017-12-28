@@ -34,7 +34,7 @@ public class DirServiceImplTest {
 
     @Test
     public void selectWithAllChildrenById() throws Exception{
-        Dir dir=dirService.selectWithAllChildrenById(1);
+        Dir dir=dirService.getDirWithAllChildren(1);
         List<Dir> children=dir.getChildrenDirList();
         for(Dir child:children){
             System.out.println(child.getName());
@@ -43,7 +43,7 @@ public class DirServiceImplTest {
 
     @Test
     public void getSiblingsDirList() throws Exception {
-//        List<Dir> siblings=dirService.getSiblingsDirList(3);
+//        List<Dir> siblings=dirService.getSiblingDirs(3);
 //        for (Dir dir:siblings){
 //            System.out.println(dir.getName());
 //        }
@@ -55,13 +55,13 @@ public class DirServiceImplTest {
         dir.setdId(5);
         dir.setName("haha");
         dir.setParent(3);
-        UpdateStateEnum updateState=dirService.update(dir);
+        UpdateStateEnum updateState=dirService.updateDir(dir);
         System.out.println(updateState.getStateInfo());
     }
 
     @Test
     public void deleteByPrimaryKey() throws Exception {
-        DeleteStateEnum deleteState=dirService.deleteByPrimaryKey(3);
+        DeleteStateEnum deleteState=dirService.deleteDirById(3);
         System.out.println(deleteState.getStateInfo());
     }
 

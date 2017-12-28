@@ -1,5 +1,8 @@
 package com.campusCloudStorage.entity;
 
+/**
+ * 群组成员联系类
+ */
 public class GroupMember extends GroupMemberKey {
     private Byte permitted;
 

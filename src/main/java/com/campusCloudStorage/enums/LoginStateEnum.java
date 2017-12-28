@@ -1,5 +1,8 @@
 package com.campusCloudStorage.enums;
 
+/**
+ * 登录状态枚举类
+ */
 public enum LoginStateEnum {
     SUCCESS(0,"登录成功！"),
     INFO_ERROR(1,"账号或密码错误！"),

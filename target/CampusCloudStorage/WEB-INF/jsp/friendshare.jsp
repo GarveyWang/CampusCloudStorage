@@ -3,79 +3,125 @@
 <head>
     <title>好友分享文件</title>
     <%@include file="common/head.jsp"%>
+    <%@include file="common/navbar.jsp"%>
 </head>
 <body>
-<div class="container">
-    <form role="form" method="post" action="/home/${rootDir}">
-        <button type="submit" class="btn btn-default">首页</button>
-    </form>
-    <form role="form" method="post" action="/friend/${uId}">
-        <button type="submit" class="btn btn-default">好友</button>
-    </form>
-    <form role="form" method="post" action="/group/${uId}">
-        <button type="submit" class="btn btn-default">群组</button>
-    </form>
-    <form role="form" method="post" action="/recyclebin/${recyclebin}">
-        <button type="submit" class="btn btn-default">回收站</button>
-    </form>
-    <div>${msg}</div>
-
-    <table class="table">
-        <caption>我分享的文件</caption>
-        <thead>
-        <tr>
-            <th>文件ID</th>
-            <th>文件名</th>
-            <th>大小</th>
-            <th>分享备注</th>
-            <th>操作</th>
-        </tr>
-        </thead>
-        <tbody>
-        <c:forEach var="file" items="${mySharedList}">
-            <tr>
-                <td>${file.fileHeader.fId}</td>
-                <td>${file.fileHeader.name}</td>
-                <td>${file.fileHeader.size}</td>
-                <td>${file.userFileShare.remark}</td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-default my_shared_file_delete_btn" f_id="${file.fileHeader.fId}">取消分享</button>
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <form role="form" id="form1" method="post" action="/home/${rootDir}">
+                    <li>
+                        <a href="#" onclick="$('#form1').submit();">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                            首页</a>
+                    </li>
+                </form>
+                <form role="form"  id="form2" method="post" action="/friend/${uId}">
+                    <li class="active">
+                        <a id="active-a" href="#" onclick="$('#form2').submit();">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            好友 <span class="sr-only">(current)</span></a>
+                    </li>
+                </form>
+                <form role="form"  id="form3" method="post" action="/group/${uId}">
+                    <li>
+                        <a href="#" onclick="$('#form3').submit();">
+                            <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span>
+                            群组</a>
+                    </li>
+                </form>
+                <form role="form"  id="form4" method="post" action="/recyclebin/${recyclebin}">
+                    <li>
+                        <a href="#" onclick="$('#form4').submit();">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                            回收站</a>
+                    </li>
+                </form>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="container">
+                <div class="return" id="friend-return">
+                    <form role="form" id="form5" method="post" action="/friend/${uId}">
+                        <a href="#" onclick="$('#form5').submit();">
+                            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                            返回
+                        </a>
+                    </form>
+                </div>
+                <div class="tab-bar">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#first" data-toggle="tab">我分享的文件</a>
+                        </li>
+                        <li>
+                            <a href="#second" data-toggle="tab">好友分享的文件</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="first">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>文件ID</th>
+                                <th>文件名</th>
+                                <th>大小</th>
+                                <th>分享备注</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <c:forEach var="file" items="${mySharedList}">
+                                <tr>
+                                    <td>${file.fileHeader.fId}</td>
+                                    <td>${file.fileHeader.name}</td>
+                                    <td>${file.fileHeader.size}</td>
+                                    <td>${file.userFileShare.remark}</td>
+                                    <td>
+                                        <%--<div class="btn-group">--%>
+                                            <a class="my_shared_file_delete_btn" f_id="${file.fileHeader.fId}">取消分享</a>
+                                        <%--</div>--%>
+                                    </td>
+                                </tr>
+                            </c:forEach>
+                            </tbody>
+                        </table>
                     </div>
-                </td>
-            </tr>
-        </c:forEach>
-        </tbody>
-    </table>
-
-    <table class="table">
-        <caption>好友分享的文件</caption>
-        <thead>
-        <tr>
-            <th>文件ID</th>
-            <th>文件名</th>
-            <th>大小</th>
-            <th>分享备注</th>
-            <th>操作</th>
-        </tr>
-        </thead>
-        <tbody>
-        <c:forEach var="file" items="${friendSharedList}">
-            <tr>
-                <td>${file.fileHeader.fId}</td>
-                <td>${file.fileHeader.name}</td>
-                <td>${file.fileHeader.size}</td>
-                <td>${file.userFileShare.remark}</td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-default friend_shared_file_download_btn" f_id="${file.fileHeader.fId}">下载</button>
+                    <div class="tab-pane fade" id="second">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>文件ID</th>
+                                <th>文件名</th>
+                                <th>大小</th>
+                                <th>分享备注</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <c:forEach var="file" items="${friendSharedList}">
+                                <tr>
+                                    <td>${file.fileHeader.fId}</td>
+                                    <td>${file.fileHeader.name}</td>
+                                    <td>${file.fileHeader.size}</td>
+                                    <td>${file.userFileShare.remark}</td>
+                                    <td>
+                                        <%--<div class="btn-group">--%>
+                                            <a class="friend_shared_file_download_btn" f_id="${file.fileHeader.fId}">下载</a>
+                                        <%--</div>--%>
+                                    </td>
+                                </tr>
+                            </c:forEach>
+                            </tbody>
+                        </table>
                     </div>
-                </td>
-            </tr>
-        </c:forEach>
-        </tbody>
-    </table>
+                </div>
+            </div>
+        </div>
 
+    </div>
 </div>
 </body>
 

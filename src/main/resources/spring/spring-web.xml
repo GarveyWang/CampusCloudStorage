@@ -35,12 +35,4 @@
     <!-- 3、自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器  -->
     <context:component-scan base-package="com.campusCloudStorage.web"/>
 
-    <!--&lt;!&ndash;配置拦截器&ndash;&gt;-->
-    <!--<mvc:interceptors>-->
-        <!--<mvc:interceptor>-->
-            <!--<mvc:mapping path="/restaurant/*/admin/**"/>-->
-            <!--<bean class="com.campusCloudStorage.interceptor.AdminInterceptor"></bean>-->
-        <!--</mvc:interceptor>-->
-    <!--</mvc:interceptors>-->
-
 </beans>

@@ -1,5 +1,8 @@
 package com.campusCloudStorage.entity;
 
+/**
+ * 用户实体类
+ */
 public class User {
     private Integer uId;
 
@@ -7,8 +10,10 @@ public class User {
 
     private String name;
 
+    //该用户的根目录Id
     private Integer rootDir;
 
+    //该用户的回收站目录Id
     private Integer recyclebin;
 
     private String type;

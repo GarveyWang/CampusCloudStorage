@@ -8,6 +8,7 @@ import com.campusCloudStorage.entity.GroupMember;
 import com.campusCloudStorage.entity.GroupMemberKey;
 import com.campusCloudStorage.entity.User;
 import com.campusCloudStorage.entity.UserGroup;
+import com.campusCloudStorage.enums.DeleteStateEnum;
 import com.campusCloudStorage.enums.GroupRequestStateEnum;
 import com.campusCloudStorage.service.GroupMemberService;
 import org.springframework.stereotype.Service;
@@ -52,45 +53,45 @@ public class GroupMemberServiceImpl implements GroupMemberService{
     }
 
     @Override
-    public boolean permitMemberRequest(int gId, int memberId) {
+    public GroupRequestStateEnum permitMemberRequest(int gId, int memberId) {
         GroupMember groupMember=new GroupMember();
         groupMember.setgId(gId);
         groupMember.setuId(memberId);
         groupMember.setPermitted(new Byte("1"));
         int updateCount = groupMemberDao.updateByPrimaryKey(groupMember);
         if(updateCount==1){
-            return true;
+            return GroupRequestStateEnum.PERMIT_SUCCESS;
         }
-        return false;
+        return GroupRequestStateEnum.PERMIT_FAIL;
     }
 
     @Override
-    public boolean refuseGroupRequest(int gId, int uId) {
+    public GroupRequestStateEnum refuseGroupRequest(int gId, int uId) {
         GroupMemberKey groupMemberKey = new GroupMemberKey();
         groupMemberKey.setgId(gId);
         groupMemberKey.setuId(uId);
         int deleteCount = groupMemberDao.deleteByPrimaryKey(groupMemberKey);
         if(deleteCount==1){
-            return true;
+            return GroupRequestStateEnum.REFUSE_SUCCESS;
         }
-        return false;
+        return GroupRequestStateEnum.REFUSE_FAIL;
     }
 
     @Override
-    public boolean deleteMember(int gId, int memberId) {
+    public DeleteStateEnum deleteMember(int gId, int memberId) {
         GroupMemberKey groupMemberKey = new GroupMemberKey();
         groupMemberKey.setgId(gId);
         groupMemberKey.setuId(memberId);
         int deleteCount = groupMemberDao.deleteByPrimaryKey(groupMemberKey);
         if(deleteCount==1){
             groupFileShareDao.deleteByGIdAndProviderId(gId,memberId);
-            return true;
+            return DeleteStateEnum.SUCCESS;
         }
-        return false;
+        return DeleteStateEnum.FAILED;
     }
 
     @Override
-    public GroupRequestStateEnum insertByPrimaryKey(int gId, int uId) {
+    public GroupRequestStateEnum sendJoinRequests(int gId, int uId) {
         GroupMember groupMember=new GroupMember();
         groupMember.setuId(uId);
         groupMember.setgId(gId);
@@ -115,7 +116,7 @@ public class GroupMemberServiceImpl implements GroupMemberService{
         }
         int insertCount = groupMemberDao.insert(groupMember);
         if(insertCount==1){
-            return GroupRequestStateEnum.SUCCESS;
+            return GroupRequestStateEnum.SEND_SUCCESS;
         }
         return GroupRequestStateEnum.NO_GROUP;
     }

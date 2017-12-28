@@ -3,6 +3,9 @@ package com.campusCloudStorage.entity;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * 文件夹实体类
+ */
 public class Dir {
     private Integer dId;
 

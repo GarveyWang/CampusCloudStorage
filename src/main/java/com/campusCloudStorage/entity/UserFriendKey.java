@@ -1,5 +1,8 @@
 package com.campusCloudStorage.entity;
 
+/**
+ * 用户好友联系主键类
+ */
 public class UserFriendKey {
     private Integer fromId;
 

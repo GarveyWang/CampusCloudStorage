@@ -2,7 +2,6 @@ package com.campusCloudStorage.web;
 
 
 import com.campusCloudStorage.dto.GroupFileShareItem;
-import com.campusCloudStorage.entity.GroupMember;
 import com.campusCloudStorage.entity.User;
 import com.campusCloudStorage.entity.UserGroup;
 import com.campusCloudStorage.enums.*;
@@ -59,7 +58,7 @@ public class GroupController {
 
         User owner = userGroupService.selectOwner(gId);
         List<User> memberList=userGroupService.selectMembers(gId);
-        List<GroupFileShareItem> groupFileShareList = groupFileShareService.selectSharedFilesByGId(gId);
+        List<GroupFileShareItem> groupFileShareList = groupFileShareService.getGroupSharedFilesByGId(gId);
         List<User>unpermittedMemberList=groupMemberService.selectUnpermittedMembers(gId);
 
         model.addAttribute("uId",uId);
@@ -126,7 +125,7 @@ public class GroupController {
 
     @RequestMapping(value = "/{uId}/{gId}/request",method = RequestMethod.POST)
     public String request(@PathVariable("uId") int uId, @PathVariable("gId") int gId, RedirectAttributes attributes, Model model){
-        GroupRequestStateEnum groupRequestState = groupMemberService.insertByPrimaryKey(gId,uId);
+        GroupRequestStateEnum groupRequestState = groupMemberService.sendJoinRequests(gId,uId);
 
         model.addAttribute("msg",groupRequestState.getStateInfo());
         attributes.addFlashAttribute("uId",uId);
@@ -157,7 +156,7 @@ public class GroupController {
     @RequestMapping(value = "/{uId}/{gId}/{fId}/groupshare",method = RequestMethod.POST)
     public String groupShareFile(@PathVariable("uId") int uId, @PathVariable("gId") int gId, @PathVariable("fId") int fId, String remark,
                                  HttpServletRequest request, RedirectAttributes attributes, Model model){
-        ShareStateEnum shareState = groupFileShareService.insert(uId,gId,fId,remark);
+        ShareStateEnum shareState = groupFileShareService.insertGroupSharedFile(uId,gId,fId,remark);
 
         model.addAttribute("msg",shareState.getStateInfo());
         attributes.addFlashAttribute("uId",uId);

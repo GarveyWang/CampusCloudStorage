@@ -50,8 +50,8 @@ public class FileHeaderServiceImpl implements FileHeaderService{
     }
 
     @Override
-    public DeleteStateEnum deleteByPrimaryKey(int fId) {
-        FileHeader fileHeader=selectByPrimaryKey(fId);
+    public DeleteStateEnum deleteFileHeader(int fId) {
+        FileHeader fileHeader= getFileHeaderById(fId);
 
         File file = new File(fileHeader.getPath());
         if(file.exists()){
@@ -67,12 +67,12 @@ public class FileHeaderServiceImpl implements FileHeaderService{
     }
 
     @Override
-    public FileHeader selectByPrimaryKey(int fId) {
+    public FileHeader getFileHeaderById(int fId) {
         return fileHeaderDao.selectByPrimaryKey(fId);
     }
 
     @Override
-    public UpdateStateEnum update(FileHeader fileHeader) {
+    public UpdateStateEnum updateFileHeader(FileHeader fileHeader) {
         if(fileHeader==null){
             return UpdateStateEnum.FAILED;
         }

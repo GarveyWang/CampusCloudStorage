@@ -10,6 +10,7 @@
     <result column="parent" jdbcType="INTEGER" property="parent" />
     <result column="u_id" jdbcType="INTEGER" property="uId" />
   </resultMap>
+
   <sql id="Base_Column_List">
     f_id, name, path, size, submit_time, parent, u_id
   </sql>
@@ -32,6 +33,12 @@
     delete from file_header
     where f_id = #{fId,jdbcType=INTEGER}
   </delete>
+
+  <delete id="deleteByParentId" parameterType="java.lang.Integer">
+    delete from file_header
+    where parent = #{parentId,jdbcType=INTEGER}
+  </delete>
+
   <insert id="insert" parameterType="com.campusCloudStorage.entity.FileHeader" useGeneratedKeys="true" keyProperty="fId">
     insert into file_header (name, path,
       size, submit_time, parent, 
@@ -40,79 +47,7 @@
       #{size,jdbcType=INTEGER}, #{submitTime,jdbcType=TIMESTAMP}, #{parent,jdbcType=INTEGER}, 
       #{uId,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.campusCloudStorage.entity.FileHeader">
-    insert into file_header
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="fId != null">
-        f_id,
-      </if>
-      <if test="name != null">
-        name,
-      </if>
-      <if test="path != null">
-        path,
-      </if>
-      <if test="size != null">
-        size,
-      </if>
-      <if test="submitTime != null">
-        submit_time,
-      </if>
-      <if test="parent != null">
-        parent,
-      </if>
-      <if test="uId != null">
-        u_id,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="fId != null">
-        #{fId,jdbcType=INTEGER},
-      </if>
-      <if test="name != null">
-        #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="path != null">
-        #{path,jdbcType=VARCHAR},
-      </if>
-      <if test="size != null">
-        #{size,jdbcType=INTEGER},
-      </if>
-      <if test="submitTime != null">
-        #{submitTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="parent != null">
-        #{parent,jdbcType=INTEGER},
-      </if>
-      <if test="uId != null">
-        #{uId,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.campusCloudStorage.entity.FileHeader">
-    update file_header
-    <set>
-      <if test="name != null">
-        name = #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="path != null">
-        path = #{path,jdbcType=VARCHAR},
-      </if>
-      <if test="size != null">
-        size = #{size,jdbcType=INTEGER},
-      </if>
-      <if test="submitTime != null">
-        submit_time = #{submitTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="parent != null">
-        parent = #{parent,jdbcType=INTEGER},
-      </if>
-      <if test="uId != null">
-        u_id = #{uId,jdbcType=INTEGER},
-      </if>
-    </set>
-    where f_id = #{fId,jdbcType=INTEGER}
-  </update>
+
   <update id="updateByPrimaryKey" parameterType="com.campusCloudStorage.entity.FileHeader">
     update file_header
     set name = #{name,jdbcType=VARCHAR},
@@ -123,4 +58,30 @@
       u_id = #{uId,jdbcType=INTEGER}
     where f_id = #{fId,jdbcType=INTEGER}
   </update>
+
+  <!--<update id="updateByPrimaryKeySelective" parameterType="com.campusCloudStorage.entity.FileHeader">-->
+    <!--update file_header-->
+    <!--<set>-->
+      <!--<if test="name != null">-->
+        <!--name = #{name,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="path != null">-->
+        <!--path = #{path,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="size != null">-->
+        <!--size = #{size,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="submitTime != null">-->
+        <!--submit_time = #{submitTime,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+      <!--<if test="parent != null">-->
+        <!--parent = #{parent,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="uId != null">-->
+        <!--u_id = #{uId,jdbcType=INTEGER},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--where f_id = #{fId,jdbcType=INTEGER}-->
+  <!--</update>-->
+
 </mapper>

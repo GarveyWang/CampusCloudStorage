@@ -7,9 +7,11 @@
     <id column="f_id" jdbcType="INTEGER" property="fId" />
     <result column="remark" jdbcType="VARCHAR" property="remark" />
   </resultMap>
+
   <sql id="Base_Column_List">
     g_id, provider_id, f_id, remark
   </sql>
+
   <select id="selectByPrimaryKey" parameterType="com.campusCloudStorage.entity.GroupFileShareKey" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
@@ -18,85 +20,92 @@
       and provider_id = #{providerId,jdbcType=INTEGER}
       and f_id = #{fId,jdbcType=INTEGER}
   </select>
+
   <select id="selectByGId" parameterType="integer" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
     from group_file_share
     where g_id = #{gId,jdbcType=INTEGER}
   </select>
+
   <delete id="deleteByPrimaryKey" parameterType="com.campusCloudStorage.entity.GroupFileShareKey">
     delete from group_file_share
     where g_id = #{gId,jdbcType=INTEGER}
       and provider_id = #{providerId,jdbcType=INTEGER}
       and f_id = #{fId,jdbcType=INTEGER}
   </delete>
+
   <delete id="deleteByGId" parameterType="integer">
     delete from group_file_share
     where g_id = #{gId,jdbcType=INTEGER}
   </delete>
+
   <delete id="deleteByGIdAndProviderId">
     delete from group_file_share
     where g_id = #{0}
     and provider_id = #{1}
   </delete>
+
   <delete id="deleteByGIdAndFId">
     delete from group_file_share
     where g_id = #{0}
     and f_id = #{1}
   </delete>
+
   <insert id="insert" parameterType="com.campusCloudStorage.entity.GroupFileShare">
     insert ignore into group_file_share (g_id, provider_id, f_id,
       remark)
     values (#{gId,jdbcType=INTEGER}, #{providerId,jdbcType=INTEGER}, #{fId,jdbcType=INTEGER}, 
       #{remark,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.campusCloudStorage.entity.GroupFileShare">
-    insert into group_file_share
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="gId != null">
-        g_id,
-      </if>
-      <if test="providerId != null">
-        provider_id,
-      </if>
-      <if test="fId != null">
-        f_id,
-      </if>
-      <if test="remark != null">
-        remark,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="gId != null">
-        #{gId,jdbcType=INTEGER},
-      </if>
-      <if test="providerId != null">
-        #{providerId,jdbcType=INTEGER},
-      </if>
-      <if test="fId != null">
-        #{fId,jdbcType=INTEGER},
-      </if>
-      <if test="remark != null">
-        #{remark,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.campusCloudStorage.entity.GroupFileShare">
-    update group_file_share
-    <set>
-      <if test="remark != null">
-        remark = #{remark,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where g_id = #{gId,jdbcType=INTEGER}
-      and provider_id = #{providerId,jdbcType=INTEGER}
-      and f_id = #{fId,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.campusCloudStorage.entity.GroupFileShare">
-    update group_file_share
-    set remark = #{remark,jdbcType=VARCHAR}
-    where g_id = #{gId,jdbcType=INTEGER}
-      and provider_id = #{providerId,jdbcType=INTEGER}
-      and f_id = #{fId,jdbcType=INTEGER}
-  </update>
+
+  <!--<update id="updateByPrimaryKeySelective" parameterType="com.campusCloudStorage.entity.GroupFileShare">-->
+    <!--update group_file_share-->
+    <!--<set>-->
+      <!--<if test="remark != null">-->
+        <!--remark = #{remark,jdbcType=VARCHAR},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--where g_id = #{gId,jdbcType=INTEGER}-->
+      <!--and provider_id = #{providerId,jdbcType=INTEGER}-->
+      <!--and f_id = #{fId,jdbcType=INTEGER}-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKey" parameterType="com.campusCloudStorage.entity.GroupFileShare">-->
+    <!--update group_file_share-->
+    <!--set remark = #{remark,jdbcType=VARCHAR}-->
+    <!--where g_id = #{gId,jdbcType=INTEGER}-->
+      <!--and provider_id = #{providerId,jdbcType=INTEGER}-->
+      <!--and f_id = #{fId,jdbcType=INTEGER}-->
+  <!--</update>-->
+  <!--<insert id="insertSelective" parameterType="com.campusCloudStorage.entity.GroupFileShare">-->
+    <!--insert into group_file_share-->
+    <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+      <!--<if test="gId != null">-->
+        <!--g_id,-->
+      <!--</if>-->
+      <!--<if test="providerId != null">-->
+        <!--provider_id,-->
+      <!--</if>-->
+      <!--<if test="fId != null">-->
+        <!--f_id,-->
+      <!--</if>-->
+      <!--<if test="remark != null">-->
+        <!--remark,-->
+      <!--</if>-->
+    <!--</trim>-->
+    <!--<trim prefix="values (" suffix=")" suffixOverrides=",">-->
+      <!--<if test="gId != null">-->
+        <!--#{gId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="providerId != null">-->
+        <!--#{providerId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="fId != null">-->
+        <!--#{fId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="remark != null">-->
+        <!--#{remark,jdbcType=VARCHAR},-->
+      <!--</if>-->
+    <!--</trim>-->
+  <!--</insert>-->
 </mapper>

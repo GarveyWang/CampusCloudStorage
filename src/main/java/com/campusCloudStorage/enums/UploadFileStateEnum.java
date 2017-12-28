@@ -1,5 +1,8 @@
 package com.campusCloudStorage.enums;
 
+/**
+ * 文件上传状态枚举类
+ */
 public enum UploadFileStateEnum {
     SUCCESS(0,"上传成功！"),
     FAILED(1,"上传失败");

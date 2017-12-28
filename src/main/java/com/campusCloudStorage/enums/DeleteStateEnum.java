@@ -1,5 +1,8 @@
 package com.campusCloudStorage.enums;
 
+/**
+ * 删除状态枚举类
+ */
 public enum DeleteStateEnum {
     SUCCESS(0,"删除成功"),
     FAILED(1,"删除失败");

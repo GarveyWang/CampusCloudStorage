@@ -1,5 +1,8 @@
 package com.campusCloudStorage.enums;
 
+/**
+ * 注册状态枚举类
+ */
 public enum RegisterStateEnum {
     SUCCESS(0,"注册成功！"),
     ID_REPEAT(1,"账号已存在！"),

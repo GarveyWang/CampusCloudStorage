@@ -2,9 +2,6 @@ package com.campusCloudStorage.web;
 
 import com.campusCloudStorage.entity.Dir;
 import com.campusCloudStorage.entity.FileHeader;
-import com.campusCloudStorage.entity.User;
-import com.campusCloudStorage.entity.UserGroup;
-import com.campusCloudStorage.enums.CreateStateEnum;
 import com.campusCloudStorage.enums.DeleteStateEnum;
 import com.campusCloudStorage.enums.UpdateStateEnum;
 import com.campusCloudStorage.service.*;
@@ -14,7 +11,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;
 
 import javax.servlet.http.HttpServletRequest;
@@ -39,12 +35,12 @@ public class RecyclebinController {
         int rootDir=(int)session.getAttribute("rootDir");
         int recyclebin=(int)session.getAttribute("recyclebin");
 
-        Dir dir=dirService.selectByPrimaryKey(dId);
-        List<Dir> dirList=dirService.getFirstChildrenDirList(dId);
-        List<FileHeader> fileHeaderList=dirService.getFirstChildrenFileHeaderList(dId);
+        Dir dir=dirService.getDirById(dId);
+        List<Dir> dirList=dirService.getFirstChildrenDirs(dId);
+        List<FileHeader> fileHeaderList=dirService.getFirstChildrenFileHeaders(dId);
         List<Dir> pathList=dirService.getPathList(dir);
 
-        //User user=userService.selectByPrimaryKey(uId);
+        //User user=userService.getDirById(uId);
 
         model.addAttribute("uId",uId);
         model.addAttribute("currentDir",dId);
@@ -62,7 +58,7 @@ public class RecyclebinController {
 
     @RequestMapping(value="/{dId}/dir/delete",method= RequestMethod.POST)
     public String deleteDir(@PathVariable("dId")int dId, HttpServletRequest request, RedirectAttributesModelMap modelMap) {
-        DeleteStateEnum deleteState=dirService.deleteByPrimaryKey(dId);
+        DeleteStateEnum deleteState=dirService.deleteDirById(dId);
         modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
 
         HttpSession session=request.getSession();
@@ -74,9 +70,9 @@ public class RecyclebinController {
     @RequestMapping(value="/{dId}/dir/{newParentId}/recover",method= RequestMethod.POST)
     public String recoverDir(@PathVariable("dId")int dId, @PathVariable("newParentId")int newParentId,
                             HttpServletRequest request, RedirectAttributesModelMap modelMap) {
-        Dir dir=dirService.selectByPrimaryKey(dId);
+        Dir dir=dirService.getDirById(dId);
         dir.setParent(newParentId);
-        UpdateStateEnum updateState = dirService.update(dir);
+        UpdateStateEnum updateState = dirService.updateDir(dir);
 
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
 
@@ -88,9 +84,9 @@ public class RecyclebinController {
     @RequestMapping(value="/{fId}/file/{newParentId}/recover",method= RequestMethod.POST)
     public String recoverFile(@PathVariable("fId")int fId, @PathVariable("newParentId")int newParentId,
                           HttpServletRequest request, RedirectAttributesModelMap modelMap) {
-        FileHeader fileHeader= fileHeaderService.selectByPrimaryKey(fId);
+        FileHeader fileHeader= fileHeaderService.getFileHeaderById(fId);
         fileHeader.setParent(newParentId);
-        UpdateStateEnum updateState = fileHeaderService.update(fileHeader);
+        UpdateStateEnum updateState = fileHeaderService.updateFileHeader(fileHeader);
 
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
 

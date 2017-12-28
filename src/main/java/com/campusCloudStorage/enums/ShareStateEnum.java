@@ -1,5 +1,8 @@
 package com.campusCloudStorage.enums;
 
+/**
+ * 分享状态枚举类
+ */
 public enum ShareStateEnum {
     SUCCESS(0,"分享成功！"),
     REPEAT(1,"该文件已经分享过啦！"),

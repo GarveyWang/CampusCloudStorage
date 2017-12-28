@@ -2,6 +2,9 @@ package com.campusCloudStorage.entity;
 
 import java.util.Date;
 
+/**
+ * 文件实体类
+ */
 public class FileHeader {
     private Integer fId;
 

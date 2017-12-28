@@ -10,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;
 
 
 import javax.servlet.http.HttpServletRequest;
@@ -49,7 +48,7 @@ public class FriendController {
 
     @RequestMapping(value = "/{uId}/{friendId}/agree",method = RequestMethod.POST)
     public String agree(@PathVariable("uId") int uId, @PathVariable("friendId") int friendId, RedirectAttributes attributes){
-        userFriendService.agreeFriendRequest(uId,friendId);
+        userFriendService.permitFriendRequest(uId,friendId);
 
         attributes.addFlashAttribute("uId",uId);
         return "forward:/friend/"+uId;
@@ -90,7 +89,7 @@ public class FriendController {
 
     @RequestMapping(value = "/{uId}/{friendId}/request",method = RequestMethod.POST)
     public String request(@PathVariable("uId") int uId, @PathVariable("friendId") int friendId, RedirectAttributes attributes, Model model){
-        FriendRequestStateEnum friendRequestState = userFriendService.insertFriendsByPrimaryKey(uId,friendId);
+        FriendRequestStateEnum friendRequestState = userFriendService.sendFriendRequest(uId,friendId);
 
         model.addAttribute("msg",friendRequestState.getStateInfo());
         attributes.addFlashAttribute("uId",uId);

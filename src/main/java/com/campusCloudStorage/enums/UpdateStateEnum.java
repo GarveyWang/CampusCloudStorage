@@ -1,5 +1,8 @@
 package com.campusCloudStorage.enums;
 
+/**
+ * 更新状态枚举类
+ */
 public enum UpdateStateEnum {
     SUCCESS(0,"更新成功"),
     FAILED(1,"更新失败");

@@ -1,5 +1,8 @@
 package com.campusCloudStorage.entity;
 
+/**
+ * 群组文件共享联系的主键类
+ */
 public class GroupFileShareKey {
     private Integer gId;
 

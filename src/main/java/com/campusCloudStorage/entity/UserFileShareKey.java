@@ -1,5 +1,8 @@
 package com.campusCloudStorage.entity;
 
+/**
+ * 好友文件共享联系主键类
+ */
 public class UserFileShareKey {
     private Integer fromId;
 

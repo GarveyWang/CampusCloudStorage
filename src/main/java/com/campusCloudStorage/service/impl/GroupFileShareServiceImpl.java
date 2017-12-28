@@ -31,7 +31,7 @@ public class GroupFileShareServiceImpl implements com.campusCloudStorage.service
 
 
     @Override
-    public List<GroupFileShareItem> selectSharedFilesByGId(int gId) {
+    public List<GroupFileShareItem> getGroupSharedFilesByGId(int gId) {
         List<GroupFileShare> groupFileShareList=groupFileShareDao.selectByGId(gId);
         List<GroupFileShareItem> fileShareList=new ArrayList<GroupFileShareItem>();
         for (GroupFileShare groupFileShare: groupFileShareList) {
@@ -49,7 +49,7 @@ public class GroupFileShareServiceImpl implements com.campusCloudStorage.service
     }
 
     @Override
-    public ShareStateEnum insert(int uId, int gId, int fId, String remark) {
+    public ShareStateEnum insertGroupSharedFile(int uId, int gId, int fId, String remark) {
        GroupFileShare groupFileShare=new GroupFileShare();
        groupFileShare.setProviderId(uId);
        groupFileShare.setgId(gId);

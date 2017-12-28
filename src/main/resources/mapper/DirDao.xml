@@ -32,43 +32,12 @@
   </delete>
 
   <insert id="insert" parameterType="com.campusCloudStorage.entity.Dir" useGeneratedKeys="true" keyProperty="dId">
-    insert into dir (name, create_time,
+    insert ignore into dir (name, create_time,
       parent)
     values (#{name,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP},
       #{parent,jdbcType=INTEGER})
   </insert>
 
-  <insert id="insertSelective" parameterType="com.campusCloudStorage.entity.Dir">
-    insert into dir
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="dId != null">
-        d_id,
-      </if>
-      <if test="name != null">
-        name,
-      </if>
-      <if test="createTime != null">
-        create_time,
-      </if>
-      <if test="parent != null">
-        parent,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="dId != null">
-        #{dId,jdbcType=INTEGER},
-      </if>
-      <if test="name != null">
-        #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="createTime != null">
-        #{createTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="parent != null">
-        #{parent,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
 
   <update id="updateByPrimaryKeySelective" parameterType="com.campusCloudStorage.entity.Dir">
     update dir
@@ -86,11 +55,4 @@
     where d_id = #{dId,jdbcType=INTEGER}
   </update>
 
-  <update id="updateByPrimaryKey" parameterType="com.campusCloudStorage.entity.Dir">
-    update dir
-    set name = #{name,jdbcType=VARCHAR},
-      create_time = #{createTime,jdbcType=TIMESTAMP},
-      parent = #{parent,jdbcType=INTEGER}
-    where d_id = #{dId,jdbcType=INTEGER}
-  </update>
 </mapper>

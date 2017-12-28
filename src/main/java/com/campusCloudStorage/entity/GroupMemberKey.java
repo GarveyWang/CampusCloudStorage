@@ -1,5 +1,8 @@
 package com.campusCloudStorage.entity;
 
+/**
+ * 群组成员联系主键类
+ */
 public class GroupMemberKey {
     private Integer gId;
 

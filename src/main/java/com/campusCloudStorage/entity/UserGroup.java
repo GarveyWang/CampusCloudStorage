@@ -1,5 +1,8 @@
 package com.campusCloudStorage.entity;
 
+/**
+ * 群组实体类
+ */
 public class UserGroup {
     private Integer gId;
 
@@ -7,6 +10,7 @@ public class UserGroup {
 
     private String type;
 
+    //创建者Id
     private Integer builderId;
 
     public Integer getgId() {

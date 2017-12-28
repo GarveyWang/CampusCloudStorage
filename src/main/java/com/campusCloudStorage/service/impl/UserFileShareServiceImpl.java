@@ -5,6 +5,7 @@ import com.campusCloudStorage.dao.UserFileShareDao;
 import com.campusCloudStorage.dto.FriendFileShareItem;
 import com.campusCloudStorage.entity.FileHeader;
 import com.campusCloudStorage.entity.UserFileShare;
+import com.campusCloudStorage.enums.DeleteStateEnum;
 import com.campusCloudStorage.enums.ShareStateEnum;
 import com.campusCloudStorage.service.UserFileShareService;
 import org.springframework.stereotype.Service;
@@ -39,7 +40,7 @@ public class UserFileShareServiceImpl implements UserFileShareService{
     }
 
     @Override
-    public ShareStateEnum insertByPrimaryKey(int fromId, int toId, int fId, String remark) {
+    public ShareStateEnum shareFileWithFriend(int fromId, int toId, int fId, String remark) {
         UserFileShare userFileShare=new UserFileShare();
         userFileShare.setfId(fId);
         userFileShare.setFromId(fromId);
@@ -54,7 +55,7 @@ public class UserFileShareServiceImpl implements UserFileShareService{
     }
 
     @Override
-    public boolean deleteByPrimaryKey(int fromId, int toId, int fId) {
+    public DeleteStateEnum deleteByPrimaryKey(int fromId, int toId, int fId) {
         UserFileShare userFileShare=new UserFileShare();
         userFileShare.setfId(fId);
         userFileShare.setFromId(fromId);
@@ -62,9 +63,9 @@ public class UserFileShareServiceImpl implements UserFileShareService{
 
         int deleteCount = userFileShareDao.deleteByPrimaryKey(userFileShare);
         if(deleteCount==1){
-            return true;
+            return DeleteStateEnum.SUCCESS;
         }else {
-            return false;
+            return DeleteStateEnum.FAILED;
         }
     }
 }

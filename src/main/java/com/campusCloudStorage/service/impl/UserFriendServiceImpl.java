@@ -5,7 +5,6 @@ import com.campusCloudStorage.dao.UserFriendDao;
 import com.campusCloudStorage.entity.User;
 import com.campusCloudStorage.entity.UserFriend;
 import com.campusCloudStorage.entity.UserFriendKey;
-import com.campusCloudStorage.enums.DeleteStateEnum;
 import com.campusCloudStorage.enums.FriendRequestStateEnum;
 import com.campusCloudStorage.service.UserFriendService;
 import org.springframework.stereotype.Service;
@@ -57,24 +56,37 @@ public class UserFriendServiceImpl implements UserFriendService{
     }
 
     @Override
-    public int agreeFriendRequest(int uId, int friendId) {
+    public FriendRequestStateEnum permitFriendRequest(int uId, int friendId) {
         UserFriend userFriend=new UserFriend(friendId,uId,new Byte("1"));
-        return userFriendDao.updateByPrimaryKey(userFriend);
+        int updateCount = userFriendDao.updateByPrimaryKey(userFriend);
+        if (updateCount == 1){
+            return FriendRequestStateEnum.PERMIT_SUCCESS;
+        }
+        return FriendRequestStateEnum.PERMIT_FAIL;
     }
 
+
     @Override
-    public int deleteFriend(int uId, int friendId) {
+    public FriendRequestStateEnum deleteFriend(int uId, int friendId) {
         UserFriendKey userFriendKey=new UserFriendKey(friendId,uId);
-        return userFriendDao.deleteByPrimaryKey(userFriendKey);
+        int deleteCount=userFriendDao.deleteByPrimaryKey(userFriendKey);
+        if(deleteCount!=1){
+            userFriendKey=new UserFriendKey(uId,friendId);
+            deleteCount=userFriendDao.deleteByPrimaryKey(userFriendKey);
+        }
+        if(deleteCount==1){
+            return FriendRequestStateEnum.DELETE_SUCCESS;
+        }
+        return FriendRequestStateEnum.DELETE_FAIL;
     }
 
     @Override
-    public FriendRequestStateEnum insertFriendsByPrimaryKey(int from, int to) {
+    public FriendRequestStateEnum sendFriendRequest(int fromId, int toId) {
         UserFriend userFriend = new UserFriend();
-        userFriend.setFromId(from);
-        userFriend.setToId(to);
+        userFriend.setFromId(fromId);
+        userFriend.setToId(toId);
 
-        User friend=userDao.selectByPrimaryKey(to);
+        User friend=userDao.selectByPrimaryKey(toId);
         if(friend.getType().equals("PRIVATE")){
             userFriend.setPermitted(new Byte("0"));
         }else {
@@ -85,6 +97,6 @@ public class UserFriendServiceImpl implements UserFriendService{
         if(insertCount==0){
             return FriendRequestStateEnum.REPEAT;
         }
-        return FriendRequestStateEnum.SUCCESS;
+        return FriendRequestStateEnum.SEND_SUCCESS;
     }
 }

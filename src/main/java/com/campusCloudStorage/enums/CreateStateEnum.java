@@ -1,5 +1,8 @@
 package com.campusCloudStorage.enums;
 
+/**
+ * 新建状态枚举类
+ */
 public enum CreateStateEnum {
     SUCCESS(0,"新建成功！"),
     DIR_NAME_REPEAT(1,"该文件夹已存在！"),

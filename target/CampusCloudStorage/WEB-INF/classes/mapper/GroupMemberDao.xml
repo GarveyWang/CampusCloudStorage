@@ -23,13 +23,7 @@
     where g_id = #{gId,jdbcType=INTEGER}
       and permitted = 1
   </select>
-  <select id="selectPermittedByUId" parameterType="integer" resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List" />
-    from group_member
-    where u_id = #{uId,jdbcType=INTEGER}
-      and permitted = 1
-  </select>
+
   <select id="selectUnpermittedMembers" parameterType="integer" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
@@ -52,45 +46,56 @@
     values (#{gId,jdbcType=INTEGER}, #{uId,jdbcType=INTEGER}, #{permitted,jdbcType=TINYINT}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.campusCloudStorage.entity.GroupMember">
-    insert into group_member
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="gId != null">
-        g_id,
-      </if>
-      <if test="uId != null">
-        u_id,
-      </if>
-      <if test="permitted != null">
-        permitted,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="gId != null">
-        #{gId,jdbcType=INTEGER},
-      </if>
-      <if test="uId != null">
-        #{uId,jdbcType=INTEGER},
-      </if>
-      <if test="permitted != null">
-        #{permitted,jdbcType=TINYINT},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.campusCloudStorage.entity.GroupMember">
-    update group_member
-    <set>
-      <if test="permitted != null">
-        permitted = #{permitted,jdbcType=TINYINT},
-      </if>
-    </set>
-    where g_id = #{gId,jdbcType=INTEGER}
-      and u_id = #{uId,jdbcType=INTEGER}
-  </update>
+
   <update id="updateByPrimaryKey" parameterType="com.campusCloudStorage.entity.GroupMember">
     update group_member
     set permitted = #{permitted,jdbcType=TINYINT}
     where g_id = #{gId,jdbcType=INTEGER}
       and u_id = #{uId,jdbcType=INTEGER}
   </update>
+
+  <select id="selectPermittedByUId" parameterType="integer" resultMap="BaseResultMap">
+  select
+  <include refid="Base_Column_List" />
+  from group_member
+  where u_id = #{uId,jdbcType=INTEGER}
+  and permitted = 1
+  </select>
+
+  <!--<update id="updateByPrimaryKeySelective" parameterType="com.campusCloudStorage.entity.GroupMember">-->
+    <!--update group_member-->
+    <!--<set>-->
+      <!--<if test="permitted != null">-->
+        <!--permitted = #{permitted,jdbcType=TINYINT},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--where g_id = #{gId,jdbcType=INTEGER}-->
+    <!--and u_id = #{uId,jdbcType=INTEGER}-->
+  <!--</update>-->
+
+  <!--<insert id="insertSelective" parameterType="com.campusCloudStorage.entity.GroupMember">-->
+    <!--insert into group_member-->
+    <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+      <!--<if test="gId != null">-->
+        <!--g_id,-->
+      <!--</if>-->
+      <!--<if test="uId != null">-->
+        <!--u_id,-->
+      <!--</if>-->
+      <!--<if test="permitted != null">-->
+        <!--permitted,-->
+      <!--</if>-->
+    <!--</trim>-->
+    <!--<trim prefix="values (" suffix=")" suffixOverrides=",">-->
+      <!--<if test="gId != null">-->
+        <!--#{gId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="uId != null">-->
+        <!--#{uId,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="permitted != null">-->
+        <!--#{permitted,jdbcType=TINYINT},-->
+      <!--</if>-->
+    <!--</trim>-->
+  <!--</insert>-->
 </mapper>

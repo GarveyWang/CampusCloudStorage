@@ -1,5 +1,8 @@
 package com.campusCloudStorage.entity;
 
+/**
+ * 用户好友联系类
+ */
 public class UserFriend extends UserFriendKey {
 
     public UserFriend() {
