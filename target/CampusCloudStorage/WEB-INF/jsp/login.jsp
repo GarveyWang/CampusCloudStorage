@@ -1,18 +1,47 @@
+<%@ page import="com.campusCloudStorage.web.security.RSA" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>登录界面</title>
-    <%@include file="common/head.jsp"%>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- 引入 Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <%--<link href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">--%>
+
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
     <style>
-        body {
-            padding-top: 100px;
+        .btn {
+            border-radius: 15px;
+        }
+        .btn-primary {
+            background-color: #28BB9C;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #74D3BF;
+        }
+        .btn-primary:focus {
+            background-color: #74D3BF;
+        }
+        h1 {
+            color: #28BB9C;
         }
     </style>
+
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 </head>
 <body>
 <div class="container">
+    <br/><br/><br/><br/><br/>
     <div>${msg}</div>
-    <form role="form" method="post" action="/account/login">
+    <form id="login_form" role="form" method="post" action="/account/login">
         <div class="row">
             <div class="col-md-4 col-md-offset-4 ">
                 <h1>登录</h1>
@@ -26,7 +55,7 @@
         </div>
         <div class="row">
             <div class="col-md-4 col-md-offset-4 ">
-                <input type="text" class="form-control" name="uId" placeholder="请输入用户ID">
+                <input id="u_id" type="text" class="form-control" name="uId" placeholder="请输入用户ID">
             </div>
         </div>
         <%--<br/>--%>
@@ -37,13 +66,13 @@
         </div>
         <div class="row">
             <div class="col-md-4 col-md-offset-4 ">
-                <input type="password" class="form-control" name="password" placeholder="请输入用户密码">
+                <input id="password" type="password" class="form-control" name="password" placeholder="请输入用户密码">
             </div>
         </div>
         <br/>
         <div class="row">
             <div class="col-md-4 col-md-offset-4 ">
-                <button type="submit" class="btn btn-primary btn-block">登录</button>
+                <button id="login_btn" type="button" class="btn btn-primary btn-block">登录</button>
             </div>
         </div>
     </form>
@@ -56,10 +85,34 @@
         </div>
     </div>
 </div>
-
-
+<input type="hidden" id="public_key" value=<%=RSA.getInstance().getCorrectPublicKey()%> >
 </body>
 
-<%@include file="common/foot.jsp"%>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/encrypt.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#login_btn').click(function () {
+
+            var encrypt = new JSEncrypt();
+            var pk1 = $("#public_key").val();
+            var reg1 = new RegExp("\\|", "g");
+            var reg2 = new RegExp("\\^", "g");
+            pk1 = pk1.replace(reg1, '\r');
+            pk1 =pk1.replace(reg2, '\n');
+            encrypt.setPublicKey(pk1);
+            var password = encrypt.encrypt($("#password").val());
+            $("#password").val(password);
+            alert( $("#password").val())
+
+
+            $('#login_form').submit();
+        })
+    })
+</script>
 
 </html>
