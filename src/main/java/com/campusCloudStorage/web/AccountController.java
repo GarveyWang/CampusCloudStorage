@@ -4,6 +4,7 @@ import com.campusCloudStorage.entity.User;
 import com.campusCloudStorage.enums.LoginStateEnum;
 import com.campusCloudStorage.enums.RegisterStateEnum;
 import com.campusCloudStorage.service.UserService;
+import com.campusCloudStorage.web.security.RSA;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,6 +31,8 @@ public class AccountController {
 
     @RequestMapping(value="/login",method= RequestMethod.POST)
     public String login(User user, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap) {
+        user.setPassword(RSA.getInstance().decryptByPrivateKey(user.getPassword()));
+        
         LoginStateEnum loginState=userService.validate(user);
         if(loginState!=LoginStateEnum.SUCCESS){
             return "login";

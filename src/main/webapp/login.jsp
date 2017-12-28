@@ -1,3 +1,4 @@
+<%@ page import="com.campusCloudStorage.web.security.RSA" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -84,19 +85,31 @@
         </div>
     </div>
 </div>
-
+<input type="hidden" id="public_key" value=<%=RSA.getInstance().getCorrectPublicKey()%> >
 </body>
 
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"></script>
 
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
 
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/encrypt.js"></script>
+
 <script type="text/javascript">
     $(function () {
         $('#login_btn').click(function () {
-            //var oldPassword = $('#password').val();
-            //var newPassword = "4";
-            //$("#password").val(newPassword);
+
+            var encrypt = new JSEncrypt();
+            var pk1 = $("#public_key").val();
+            var reg1 = new RegExp("\\|", "g");
+            var reg2 = new RegExp("\\^", "g");
+            pk1 = pk1.replace(reg1, '\r');
+            pk1 =pk1.replace(reg2, '\n');
+            encrypt.setPublicKey(pk1);
+            var password = encrypt.encrypt($("#password").val());
+            $("#password").val(password);
+            alert( $("#password").val())
+
+
             $('#login_form').submit();
         })
     })
